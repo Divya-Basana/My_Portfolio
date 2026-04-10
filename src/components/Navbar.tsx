@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const navLinks = ["Home", "About", "Skills", "Projects", "Experience", "Contact"];
+const navLinks = ["Home", "About", "Education", "Skills", "Internships", "Projects", "Certifications", "Contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

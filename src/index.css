@@ -120,7 +120,21 @@
   .glass-card {
     @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
   }
+  .interactive-card {
+    @apply cursor-pointer transition-all duration-300 ease-in-out;
+  }
   .hero-glow {
     background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 30%), hsl(var(--hero-glow) / 0.12), transparent 60%);
+  }
+}
+
+@layer components {
+  .interactive-card:hover {
+    transform: scale(1.04) translateY(-5px);
+    @apply shadow-xl border-primary/20;
+  }
+  .interactive-card:active {
+    transform: scale(0.97);
+    @apply transition-transform duration-100;
   }
 }

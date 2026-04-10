@@ -7,25 +7,25 @@ const projects = [
   {
     icon: Bot,
     title: "AI Assistant Mobile App",
-    tech: ["Flutter", "Dart", "Firebase", "REST API", "Speech-to-Text"],
-    desc: "AI-powered mobile assistant supporting voice and text interaction with real-time responses.",
-    features: ["Chat interface", "Voice input", "Firebase authentication"],
+    tech: ["Flutter", "Firebase", "REST API", "Speech-to-Text"],
+    desc: "Built an AI-powered assistant supporting voice and text interaction with real-time responses and secure authentication.",
+    features: ["Voice and text interaction", "Real-time responses", "Secure authentication"],
     github: "https://github.com/Divya-Basana/AI_ASSISTANT_APP",
   },
   {
     icon: Gamepad2,
     title: "VIBELY – Motion Controlled Gaming",
     tech: ["Python", "Flask", "OpenCV", "MediaPipe", "PyGame"],
-    desc: "Real-time gesture-based gaming system using computer vision.",
-    features: ["Controller-free gameplay", "Pose detection", "Interactive games"],
+    desc: "Developed a gesture-controlled gaming platform enabling controller-free gameplay using computer vision.",
+    features: ["Gesture-controlled gameplay", "Computer vision", "Interactive gaming"],
     github: "https://github.com/Divya-Basana/Vibely",
   },
   {
     icon: HeartPulse,
     title: "Health Monitoring System",
     tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    desc: "Web application for managing health data with user/admin modules.",
-    features: ["Authentication", "Reporting", "Database normalization"],
+    desc: "Created a web application for health tracking with authentication, reporting features, and optimized database design.",
+    features: ["Health tracking", "Authentication system", "Reporting features"],
     github: "",
   },
 ];
@@ -37,7 +37,7 @@ const ProjectsSection = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((p, i) => (
           <AnimatedSection key={p.title} delay={i * 0.1}>
-            <div className="glass-card rounded-xl p-8 h-full flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+            <div className="glass-card interactive-card rounded-xl p-8 h-full flex flex-col group">
               <div className="flex items-center justify-between mb-5">
                 <div className="p-3 rounded-lg gradient-bg">
                   <p.icon size={24} className="text-primary-foreground" />
