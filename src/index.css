@@ -119,9 +119,14 @@
   }
   .glass-card {
     @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
   .interactive-card {
     @apply cursor-pointer transition-all duration-300 ease-in-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
   }
   .hero-glow {
     background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 30%), hsl(var(--hero-glow) / 0.12), transparent 60%);
@@ -130,11 +135,15 @@
 
 @layer components {
   .interactive-card:hover {
-    transform: scale(1.04) translateY(-5px);
+    transform: scale(1.02) translateY(-3px);
     @apply shadow-xl border-primary/20;
   }
   .interactive-card:active {
-    transform: scale(0.97);
+    transform: scale(0.98);
     @apply transition-transform duration-100;
+  }
+
+  .section-title {
+    text-transform: uppercase;
   }
 }

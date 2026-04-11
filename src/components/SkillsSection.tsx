@@ -3,13 +3,12 @@ import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
 
 const skills = [
-  { icon: Code2, title: "Programming", items: ["Java", "Python"] },
-  { icon: Globe, title: "Web Development", items: ["HTML5", "CSS3", "JavaScript"] },
+  { icon: Code2, title: "Programming", items: ["Java", "Python", "Dart"] },
+  { icon: Globe, title: "Web Development", items: ["HTML5", "CSS3", "JavaScript", "Flask"] },
   { icon: Brain, title: "Data Science", items: ["Machine Learning", "Data Analysis", "Data Visualization"] },
-  { icon: Database, title: "Database", items: ["MySQL"] },
+  { icon: Database, title: "Database", items: ["MySQL", "Firebase", "MongoDB"] },
   { icon: Wrench, title: "Tools", items: ["Excel", "Tableau", "VS Code", "Jupyter Notebook", "GitHub"] },
   { icon: Cpu, title: "Core Concepts", items: ["OOPS", "Data Structures", "DBMS", "Software Engineering"] },
-  { icon: Users, title: "Soft Skills", items: ["Problem Solving", "Communication", "Collaboration"] },
 ];
 
 const SkillsSection = () => (
