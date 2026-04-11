@@ -17,7 +17,7 @@ const AboutSection = () => (
               <h3 className="font-display font-semibold text-xl">Who I Am</h3>
             </div>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Motivated and detail-oriented professional with strong programming and analytical skills. Experienced in developing software solutions and working with data-driven technologies. Passionate about problem-solving, building scalable applications, and continuously learning new technologies.
+              I am a passionate Computer Science student with a strong interest in software development and data-driven solutions. I enjoy building real-world applications, from AI-powered systems to responsive web platforms. With hands-on experience in projects and problem-solving, I focus on writing clean and efficient code. I am always eager to learn new technologies and grow as a developer.
             </p>
           </div>
         </AnimatedSection>
@@ -45,7 +45,7 @@ const AboutSection = () => (
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="glass-card interactive-card rounded-xl p-6">
+            <div className="glass-card rounded-xl p-6 cursor-pointer hover:shadow-xl hover:scale-[1.02] hover:-translate-y-[4px] transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg gradient-bg">
                   <Heart size={20} className="text-primary-foreground" />

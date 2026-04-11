@@ -135,11 +135,13 @@
 
 @layer components {
   .interactive-card:hover {
-    transform: scale(1.02) translateY(-3px);
+    transform: translateZ(0) scale(1.02) translateY(-4px);
     @apply shadow-xl border-primary/20;
+    backface-visibility: hidden;
+    will-change: transform;
   }
   .interactive-card:active {
-    transform: scale(0.98);
+    transform: translateZ(0) scale(0.98);
     @apply transition-transform duration-100;
   }
 
